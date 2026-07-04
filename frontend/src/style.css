@@ -1,0 +1,117 @@
+/* ── CloudJourney 云途 全局样式 ── */
+:root {
+  --cj-primary: #2d5a87;
+  --cj-primary-light: #3b7ab5;
+  --cj-primary-dark: #1e3a5f;
+  --cj-accent: #f59e0b;
+  --cj-accent-hover: #d97706;
+  --cj-bg: #f0f2f5;
+  --cj-bg-card: #ffffff;
+  --cj-text: #333333;
+  --cj-text-secondary: #6b7280;
+  --cj-border: #e5e7eb;
+  --cj-success: #10b981;
+  --cj-warning: #f59e0b;
+  --cj-danger: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  background: var(--cj-bg);
+  color: var(--cj-text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 页面容器 */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* Element Plus 主题覆盖 */
+.el-menu {
+  border-bottom: none !important;
+}
+
+.el-card {
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.el-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.el-button--primary {
+  --el-button-bg-color: var(--cj-primary);
+  --el-button-border-color: var(--cj-primary);
+  --el-button-hover-bg-color: var(--cj-primary-light);
+  --el-button-hover-border-color: var(--cj-primary-light);
+}
+
+/* 加载状态 */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  color: var(--cj-text-secondary);
+}
+
+/* 空状态 */
+.empty-container {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--cj-text-secondary);
+}
+
+.empty-container .empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-container .empty-text {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.empty-container .empty-hint {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* 页面标题 */
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--cj-primary-dark);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}

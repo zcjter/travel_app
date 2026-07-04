@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Database
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# OpenCode
+.omo/
+
+# Backend logs
+backend/*_err.txt
+backend/*_out.txt
